@@ -98,8 +98,6 @@ async function tryToLoad() {
   }
 }
 
-tryToLoad();
-
 function updateFilter(filterValue) {
   filterResult.innerHTML = '';
 
