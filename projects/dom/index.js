@@ -25,7 +25,8 @@ function createDivWithText(text) {
    prepend(document.querySelector('#one'), document.querySelector('#two')) // добавит элемент переданный первым аргументом в начало элемента переданного вторым аргументом
  */
 function prepend(what, where) {
-  where.insertBefore(what, where.firstElementChild);
+  // where.insertBefore (what, where.firstElementChild);
+  where.prepend(what);
 }
 
 /*
@@ -55,7 +56,6 @@ function findAllPSiblings(where) {
       nextP.push(el);
     }
   }
-
   return nextP;
 }
 
